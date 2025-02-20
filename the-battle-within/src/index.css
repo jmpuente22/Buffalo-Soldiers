@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: linear-gradient(to bottom, #f4f4f9, #00461f, #f4f4f9); /* Green to light neutral gradient */
   color: #333; /* Dark text for readability */
   line-height: 1.6;
@@ -19,7 +19,7 @@ header {
   color: #e0e0e0; /* Light gray for text */
   padding: 30px 0;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -53,15 +53,15 @@ section p {
 
 /* Soldier Cards */
 .soldier-card {
-  background: #f7f7f7; /* Light gray background for cards */
-  border: 2px solid #e0e0e0; /* Light border for cards */
-  border-radius: 10px;
+  flex: 1 1 calc(50% - 20px); /* Each card takes 50% of the container with spacing */
+  max-width: 500px; /* Prevents cards from stretching too wide */
   padding: 20px;
-  margin: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
 }
+
 
 .soldier-card:hover {
   transform: translateY(-5px);
@@ -89,6 +89,7 @@ section p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .soldier-list .soldier-card {

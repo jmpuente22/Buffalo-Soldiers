@@ -14,11 +14,9 @@ const App = () => {
 
       <main>
         <Section title="The Army of Self:">
-          <h2>Personal & Professional Soldiers</h2>
+          <h2>Personal Soldiers</h2>
           <div className="soldier-list">
-            {/* Personal Soldiers */}
             <SoldierCard
-              title="Personal Soldiers"
               name="Loyalty"
               description="The steady warrior, Loyalty stands strong in tough times. She protects the people she cares about and stays committed, even when things get hard."
               strengths="Strengths: Trustworthy and dependable."
@@ -42,10 +40,13 @@ const App = () => {
               strengths="Strengths: Brings people together and encourages growth."
               weaknesses="Weaknesses: Can struggle with setting limits, leading to burnout."
             />
+          </div>
+        </Section>
 
-            {/* Professional Soldiers */}
+        <Section title="The Army of Self:">
+        <h2>Professional Soldiers</h2>
+          <div className="soldier-list">
             <SoldierCard
-              title="Professional Soldiers"
               name="Ethics"
               description="The leader, Ethics makes sure all actions are fair and right. He follows the rules and stands for justice."
               strengths="Strengths: Has a strong sense of right and wrong."
@@ -70,65 +71,6 @@ const App = () => {
               weaknesses="Weaknesses: Can be overloaded with responsibilities if not careful."
             />
           </div>
-        </Section>
-
-        <Section title="The War: The Cover-Up Chronicles">
-          <p>
-            The battlefield was set. The old manager ignored rules and fairness.
-            Co-workers whispered behind backs instead of showing respect. The
-            final straw was when a serious health risk was hidden. Ethics
-            stepped up, demanding the truth. Communication tried to fix the
-            situation, but dishonesty had already caused too much damage.
-            Empathy and Compassion, though hurt, stood strong to keep things
-            professional. Loyalty had to decide stay and fight or leave for
-            something better? The team agreed: walking away to find a better
-            environment was the real victory.
-          </p>
-        </Section>
-
-        <Section title="The Peace: Serenity Passage">
-          <p>
-            A fresh start. A new leader, a new team. Loyalty thrived in a place
-            that deserved her. Empathy and Compassion finally felt valued.
-            Communication was heard. Ethics stood tall, knowing fairness was the
-            norm. The team worked together, proving what the last workplace
-            missed out on. This wasn’t just a win it was proof of resilience.
-          </p>
-        </Section>
-
-        <Section title="The Formation: Soldiers in Action">
-          <p>
-            During Hard Times (War): Ethics and Honesty lead the way, making
-            sure things are right. Communication makes sure the message is
-            clear, while Soft Skills helps keep things calm. Empathy and
-            Compassion offer support, and Reliability stays strong no matter
-            what.
-          </p>
-
-          <p>
-            During Success (Peace): Communication and Soft Skills build strong
-            bonds. Ethics and Loyalty keep things honest. Compassion and Empathy
-            lift up the team. Reliability keeps things moving forward.
-          </p>
-
-          <p>
-            Armor and Weaknesses: Ethics and Honesty need support from Soft
-            Skills to avoid coming off too strong. Empathy and Compassion need
-            protection from burnout by setting limits. Communication needs
-            patience when dealing with resistance.
-          </p>
-        </Section>
-
-        <Section title="The Conclusion: The Strategy for Future Battles">
-          <p>
-            Through ups and downs, this team has learned how to work together.
-            Some battles aren’t worth fighting ometimes, leaving is the real
-            win. The goal isn’t just to survive but to grow, earn respect, and
-            create better opportunities. The future is clear: stand strong, be
-            honest, lead with fairness, and build a space where success is
-            possible. This team is ready. The next challenge won’t break
-            them,it’ll make them even stronger.
-          </p>
         </Section>
       </main>
 
