@@ -1,0 +1,137 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #f4f4f9, #00461f, #f4f4f9); /* Green to light neutral gradient */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+  padding: 0 10%;
+}
+
+/* Header */
+header {
+  background: #00461f; /* Deep army green */
+  color: #e0e0e0; /* Light gray for text */
+  padding: 30px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+  margin: 40px 0;
+  padding: 40px;
+  background: #ffffff; /* White background for clean look */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #00461f; /* Deep green for headings */
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 1.1rem;
+  color: #555; /* Slightly dark gray for text */
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Soldier Cards */
+.soldier-card {
+  background: #f7f7f7; /* Light gray background for cards */
+  border: 2px solid #e0e0e0; /* Light border for cards */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.soldier-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.soldier-card h3 {
+  font-size: 1.5rem;
+  color: #00461f; /* Deep green for soldier names */
+  margin-bottom: 10px;
+}
+
+.soldier-card h4 {
+  font-size: 1.1rem;
+  color: #888; /* Medium gray for subheading */
+}
+
+.soldier-card p {
+  color: #555; /* Dark gray text for descriptions */
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.soldier-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.soldier-list .soldier-card {
+  flex: 1 0 30%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 5%;
+  }
+
+  .soldier-list .soldier-card {
+    flex: 1 0 45%;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+}
+
+/* Footer */
+footer {
+  background: #00461f; /* Deep army green */
+  color: #e0e0e0; /* Light gray for text */
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+/* Interactive Elements */
+button {
+  background: #00461f; /* Dark green background */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00633d; /* Slightly lighter green on hover */
+}
