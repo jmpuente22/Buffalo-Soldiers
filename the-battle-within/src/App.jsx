@@ -9,7 +9,7 @@ const App = () => {
     <div>
       {/* Hero Image Section */}
       <div className="hero-text">
-  <h1>Meet the Heroes</h1>
+  <h1>Meet the Soldiers</h1>
 </div>
 <div className="hero"></div>
 
