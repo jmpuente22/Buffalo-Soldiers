@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global Styles */ 
 * {
   margin: 0;
   padding: 0;
@@ -7,19 +7,50 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to bottom, #f4f4f9, #00461f, #f4f4f9); /* Green to light neutral gradient */
-  color: #333; /* Dark text for readability */
+  background: linear-gradient(to bottom, #f4f4f9, #1e3a8a, #f4f4f9); /* Blue gradient */
+  color: #333;
   line-height: 1.6;
   padding: 0 10%;
+}
+.hero-text {
+  text-align: center;
+
+  margin-top: 30px; /* Adjust this to control the distance from the top */
+  width: 100%;
+  height: 50px;
+  background-color: #1e3a8a; /* Solid blue */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  width: 100%;
+  height: 300px;
+  background-image: url('/images/war.png'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 200px;
+  padding-top: 5px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 255, 0.8); /* Glowing text (blue) */
 }
 
 /* Header */
 header {
-  background: #00461f; /* Deep army green */
-  color: #e0e0e0; /* Light gray for text */
+  background: #1e3a8a; /* Blue color */
+  color: #e0e0e0;
   padding: 30px 0;
   text-align: center;
-  font-size: 2.rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -30,14 +61,14 @@ header {
 section {
   margin: 40px 0;
   padding: 40px;
-  background: #ffffff; /* White background for clean look */
+  background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
   font-size: 2rem;
-  color: #00461f; /* Deep green for headings */
+  color: #1e3a8a; /* Blue color */
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -46,22 +77,37 @@ section h2 {
 
 section p {
   font-size: 1.1rem;
-  color: #555; /* Slightly dark gray for text */
+  color: #555;
   margin-bottom: 15px;
   line-height: 1.5;
 }
 
 /* Soldier Cards */
 .soldier-card {
-  flex: 1 1 calc(50% - 20px); /* Each card takes 50% of the container with spacing */
-  max-width: 500px; /* Prevents cards from stretching too wide */
+  text-align: center; /* Centers text and image */
+  flex: 1 1 calc(30% - 20px);
+  max-width: 400px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
-  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Soldier Card Images */
+.soldier-card img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Maintain a square shape */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  border-radius: 50%; /* Makes the image circular */
+  display: block;
+  margin: 0 auto 15px; /* Centers the image and adds spacing */
+  border: 3px solid #1e3a8a; /* Blue border */
+}
 
 .soldier-card:hover {
   transform: translateY(-5px);
@@ -70,51 +116,64 @@ section p {
 
 .soldier-card h3 {
   font-size: 1.5rem;
-  color: #00461f; /* Deep green for soldier names */
+  color: #1e3a8a; /* Blue color */
   margin-bottom: 10px;
 }
 
 .soldier-card h4 {
   font-size: 1.1rem;
-  color: #888; /* Medium gray for subheading */
+  color: #888;
 }
 
 .soldier-card p {
-  color: #555; /* Dark gray text for descriptions */
+  color: #555;
   font-size: 1rem;
   margin-top: 10px;
 }
 
+/* Soldier List */
 .soldier-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* Align cards with space between */
   gap: 20px;
 }
 
 .soldier-list .soldier-card {
-  flex: 1 0 30%;
+  flex: 1 1 calc(50% - 20px); /* Adjust the flex property to have two cards per row */
   margin: 10px;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 0 5%;
-  }
-
+/* Responsiveness */
+@media (max-width: 1024px) {
   .soldier-list .soldier-card {
-    flex: 1 0 45%;
+    flex: 1 1 calc(50% - 20px); /* Two cards on medium screens (tablets) */
   }
+}
 
-  header {
-    padding: 20px 0;
+@media (max-width: 768px) {
+  .soldier-list .soldier-card {
+    flex: 1 1 100%; /* One card per row on smaller screens (mobile) */
   }
+}
+
+
+.soldier-list .soldier-card {
+  flex: 1 1 100%;
+}
+
+header {
+  padding: 20px 0;
+}
+
+section {
+  padding: 30px;
 }
 
 /* Footer */
 footer {
-  background: #00461f; /* Deep army green */
-  color: #e0e0e0; /* Light gray for text */
+  background: #1e3a8a; /* Blue color */
+  color: #e0e0e0;
   padding: 20px;
   text-align: center;
   font-size: 1rem;
@@ -123,7 +182,7 @@ footer {
 
 /* Interactive Elements */
 button {
-  background: #00461f; /* Dark green background */
+  background: #1e3a8a; /* Blue color */
   color: white;
   padding: 12px 24px;
   border: none;
@@ -134,5 +193,5 @@ button {
 }
 
 button:hover {
-  background-color: #00633d; /* Slightly lighter green on hover */
+  background-color: #1e40af; /* Darker blue on hover */
 }
