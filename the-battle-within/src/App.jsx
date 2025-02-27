@@ -28,28 +28,28 @@ const App = () => {
               description="The steady warrior, Loyalty stands strong in tough times. She protects the people she cares about and stays committed, even when things get hard."
               strengths="Trustworthy and dependable."
               weaknesses="May stay in bad situations too long out of commitment."
-              image="/images/loyalty.png"
+              image="/public/loyalty.png"
             />
             <SoldierCard
               name="Empathy"
               description="The healer of the team, Empathy makes sure no one is left behind. She listens, understands, and helps, making her a bridge between problems and solutions."
               strengths="Deep understanding of people’s feelings and needs."
               weaknesses="Can become emotionally drained or taken advantage of."
-              image="/images/empathy.png"
+              image="/public/empathy.png"
             />
             <SoldierCard
               name="Honesty"
               description="The truth teller, Honesty doesn’t sugarcoat things. She believes in being real and fair, making sure everything is clear."
               strengths="Builds trust and respect."
               weaknesses="Can sometimes be too blunt, which may hurt feelings."
-              image="/images/honesty.png"
+              image="/public/honesty.png"
             />
             <SoldierCard
               name="Compassion"
               description="The protector, Compassion looks out for those who are struggling and encourages understanding."
               strengths="Brings people together and encourages growth."
               weaknesses="Can struggle with setting limits, leading to burnout."
-              image="/images/compassion.png"
+              image="/public/compassion.png"
             />
           </div>
         </Section>
@@ -63,28 +63,28 @@ const App = () => {
               description="The leader, Ethics makes sure all actions are fair and right. He follows the rules and stands for justice."
               strengths="Has a strong sense of right and wrong."
               weaknesses="Can be too strict in situations that require flexibility."
-              image="/images/ethics.png"
+              image="/public/ethics.png"
             />
             <SoldierCard
               name="Soft Skills"
               description="The negotiator, Soft Skills helps smooth out problems and build strong relationships."
               strengths="Helps deal with challenges at work and connect with others."
               weaknesses="Can sometimes avoid confrontation to keep the peace."
-              image="/images/softskills.png"
+              image="/public/softskills.png"
             />
             <SoldierCard
               name="Communication"
               description="The messenger, Communication makes sure everyone is heard and understood."
               strengths="Good at explaining thoughts and making sure people understand each other."
               weaknesses="Can struggle when others refuse to listen."
-              image="/images/communication.png"
+              image="/public/communication.png"
             />
             <SoldierCard
               name="Reliability"
               description="The backbone, Reliability is always there and follows through on promises."
               strengths="Builds confidence in leadership and teamwork."
               weaknesses="Can be overloaded with responsibilities if not careful."
-              image="/images/reliability.png"
+              image="/public/reliability.png"
             />
           </div>
         </Section>
