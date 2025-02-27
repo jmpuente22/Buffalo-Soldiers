@@ -13,7 +13,9 @@ body {
   padding: 0 10%;
 }
 .hero-text {
-  text-align: center;
+  color: white;
+  text-align: center
+  ;
 
   margin-top: 30px; /* Adjust this to control the distance from the top */
   width: 100%;
