@@ -2,7 +2,16 @@ import React from "react";
 import Section from "./components/Section";
 import SoldierCard from "./components/SoldierCard";
 import Footer from "./components/Footer";
-import "./index.css";
+import './index.css';
+import loyalty from '../../the-battle-within/public/loyalty.png'
+import empathy from '../../the-battle-within/public/empathy.png'
+import honesty from '../../the-battle-within/public/honesty.png'
+import compassion from '../../the-battle-within/public/compassion.png'
+import ethics from '../../the-battle-within/public/ethics.png'
+import softskills from '../../the-battle-within/public/softskills.png'
+import communication from '../../the-battle-within/public/communication.png'
+import reliability from '../../the-battle-within/public/reliability.png'
+
 
 const App = () => {
   return (
@@ -28,28 +37,28 @@ const App = () => {
               description="The steady warrior, Loyalty stands strong in tough times. She protects the people she cares about and stays committed, even when things get hard."
               strengths="Trustworthy and dependable."
               weaknesses="May stay in bad situations too long out of commitment."
-              image="/public/loyalty.png"
+              image={loyalty}
             />
             <SoldierCard
               name="Empathy"
               description="The healer of the team, Empathy makes sure no one is left behind. She listens, understands, and helps, making her a bridge between problems and solutions."
               strengths="Deep understanding of people’s feelings and needs."
               weaknesses="Can become emotionally drained or taken advantage of."
-              image="/public/empathy.png"
+              image={empathy}
             />
             <SoldierCard
               name="Honesty"
               description="The truth teller, Honesty doesn’t sugarcoat things. She believes in being real and fair, making sure everything is clear."
               strengths="Builds trust and respect."
               weaknesses="Can sometimes be too blunt, which may hurt feelings."
-              image="/public/honesty.png"
+              image={honesty}
             />
             <SoldierCard
               name="Compassion"
               description="The protector, Compassion looks out for those who are struggling and encourages understanding."
               strengths="Brings people together and encourages growth."
               weaknesses="Can struggle with setting limits, leading to burnout."
-              image="/public/compassion.png"
+              image={compassion}
             />
           </div>
         </Section>
@@ -63,28 +72,28 @@ const App = () => {
               description="The leader, Ethics makes sure all actions are fair and right. He follows the rules and stands for justice."
               strengths="Has a strong sense of right and wrong."
               weaknesses="Can be too strict in situations that require flexibility."
-              image="/public/ethics.png"
+              image={ethics}
             />
             <SoldierCard
               name="Soft Skills"
               description="The negotiator, Soft Skills helps smooth out problems and build strong relationships."
               strengths="Helps deal with challenges at work and connect with others."
               weaknesses="Can sometimes avoid confrontation to keep the peace."
-              image="/public/softskills.png"
+              image={softskills}
             />
             <SoldierCard
               name="Communication"
               description="The messenger, Communication makes sure everyone is heard and understood."
               strengths="Good at explaining thoughts and making sure people understand each other."
               weaknesses="Can struggle when others refuse to listen."
-              image="/public/communication.png"
-            />
+              image={communication}
+            />  
             <SoldierCard
               name="Reliability"
               description="The backbone, Reliability is always there and follows through on promises."
               strengths="Builds confidence in leadership and teamwork."
               weaknesses="Can be overloaded with responsibilities if not careful."
-              image="/public/reliability.png"
+              image={reliability}
             />
           </div>
         </Section>

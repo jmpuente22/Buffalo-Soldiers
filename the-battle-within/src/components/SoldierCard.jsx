@@ -13,3 +13,5 @@ const SoldierCard = ({ name, description, strengths, weaknesses, image }) => {
 };
 
 export default SoldierCard;
+
+

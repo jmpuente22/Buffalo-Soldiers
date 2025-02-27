@@ -1,5 +1,5 @@
 {
-  "name": "the-battle-within",
+  "name": "buffalosoldiers",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,7 @@
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
+    
   },
   "dependencies": {
     "react": "^19.0.0",
