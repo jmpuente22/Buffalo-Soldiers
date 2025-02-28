@@ -2,7 +2,6 @@ import React from "react";
 import Section from "./components/Section";
 import SoldierCard from "./components/SoldierCard";
 import Footer from "./components/Footer";
-import './index.css';
 import loyalty from '../../the-battle-within/public/loyalty.png'
 import empathy from '../../the-battle-within/public/empathy.png'
 import honesty from '../../the-battle-within/public/honesty.png'
