@@ -2,14 +2,14 @@ import React from "react";
 import Section from "./components/Section";
 import SoldierCard from "./components/SoldierCard";
 import Footer from "./components/Footer";
-import loyalty from '../../the-battle-within/public/loyalty.png'
-import empathy from '../../the-battle-within/public/empathy.png'
-import honesty from '../../the-battle-within/public/honesty.png'
-import compassion from '../../the-battle-within/public/compassion.png'
-import ethics from '../../the-battle-within/public/ethics.png'
-import softskills from '../../the-battle-within/public/softskills.png'
-import communication from '../../the-battle-within/public/communication.png'
-import reliability from '../../the-battle-within/public/reliability.png'
+import loyalty from '../public/loyalty.png'
+import empathy from '../public/empathy.png'
+import honesty from '../public/honesty.png'
+import compassion from '../public/compassion.png'
+import ethics from '../public/ethics.png'
+import softskills from '../public/softskills.png'
+import communication from '../public/communication.png'
+import reliability from '../public/reliability.png'
 
 
 const App = () => {
